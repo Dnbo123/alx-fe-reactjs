@@ -14,7 +14,7 @@ function WelcomeMessage() {
 function App() {
     return(
         <div className="App">
-                <WelcomeMessage />    
+                "WelcomeMessage", "<WelcomeMessage />"    
         </div>
     );
 }
