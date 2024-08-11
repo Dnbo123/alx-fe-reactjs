@@ -13,7 +13,7 @@ function WelcomeMessage() {
 function App() {
     return(
         <div className="App">
-                <welcomeMessage />    
+                <WelcomeMessage />    
         </div>
     );
 }
