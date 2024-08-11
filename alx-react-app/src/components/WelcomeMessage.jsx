@@ -1,3 +1,4 @@
+import React from 'react';
 import WelcomeMessage from './WelcomeMessage';
 
 function WelcomeMessage() {
@@ -15,7 +16,6 @@ function App() {
         <div className="App">
                 <WelcomeMessage />    
         </div>
-    )
+    );
 }
-
-export default WelcomeMessage;
+export default App;
