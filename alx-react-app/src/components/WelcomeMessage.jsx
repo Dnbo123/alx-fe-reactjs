@@ -1,5 +1,5 @@
 import React from 'react';
-import WelcomeMessage from './WelcomeMessage';
+
 
 function WelcomeMessage() {
     return (
