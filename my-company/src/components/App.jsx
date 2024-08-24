@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import { useRoutes } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+
 import Home from './Home';
 import About from './About';;
 import Services from './Services';
