@@ -9,7 +9,8 @@ import Navbar from './Navbar';
 
 
 function App() {
-  return (
+ 
+    return (
   <Router>
     <Navbar/>
     <Routes>
