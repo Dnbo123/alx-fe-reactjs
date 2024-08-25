@@ -2,8 +2,10 @@ import { useParams } from 'react-router-dom';
 import useRecipeStore from './recipeStore';
 
 function RecipeDetails() {
-  const { id } = useParams();
+  const { id } = useParams(); // Extracting recipe ID from URL parameters
   const { recipes } = useRecipeStore();
+
+  // Finding the recipe with the matching ID from the recipes array
   const recipe = recipes.find((r) => r.id === id);
 
   if (!recipe) {
@@ -12,11 +14,9 @@ function RecipeDetails() {
 
   return (
     <div>
-      <h2>{recipe.title}</h2>
+      <h2>{recipe.title}</h2> // Use recipe.title for display
       <p>{recipe.description}</p>
       {/* Add more details here, like ingredients and instructions */}
     </div>
   );
 }
-
-export default RecipeDetails;
