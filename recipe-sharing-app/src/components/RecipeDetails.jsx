@@ -6,7 +6,7 @@ function RecipeDetails() {
   const { recipes } = useRecipeStore();
 
   // Finding the recipe with the matching ID from the recipes array
-  const recipe = recipes.find((r) => r.id === id);
+  const recipe = recipes.find((r) => recipe.id === id);
 
   if (!recipe) {
     return <p>Recipe not found.</p>;
