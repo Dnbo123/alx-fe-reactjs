@@ -66,7 +66,6 @@ const RegistrationForm = () => {
           name="password"
           value={formData.password}
           onChange={handleChange}
-          
         />
         {errors.password && <p>{errors.password}</p>}
       </div>
