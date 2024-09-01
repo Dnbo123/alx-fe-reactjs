@@ -20,12 +20,11 @@ const useRecipeStore = create((set) => ({
   generateRecommendations: () => set((state) => {
     // Example: Recommend recipes that are not already favorites and share ingredients or type
     const recommended = state.recipes.filter(recipe =>
-      !state.favorites.includes(recipe.id) && Math.random() > 0.5 // Mock recommendation logic
+      !state.favorites.includes(recipe.id) && Math.random() > 0.5 
     );
     return { recommendations: recommended };
   }),
   
-  // Existing actions like addRecipe, updateRecipe, deleteRecipe...
 }));
 
 export default useRecipeStore;
