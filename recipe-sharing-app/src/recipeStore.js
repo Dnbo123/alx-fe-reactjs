@@ -1,4 +1,4 @@
-import { create } from 'zustand'
+import create from 'zustand'
 
 const useRecipeStore = create((set, get) => ({
   recipes: [],
@@ -19,6 +19,7 @@ const useRecipeStore = create((set, get) => ({
   setSearchTerm: (term) => {
     set({ searchTerm: term })
     get().filterRecipes()
+
   },
   filterRecipes: () => set((state) => ({
     filteredRecipes: state.recipes.filter((recipe) =>
@@ -28,4 +29,4 @@ const useRecipeStore = create((set, get) => ({
   })),
 }))
 
-export default useRecipeStore;
+export default useRecipeStore
