@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
-import Navigation from './Navigation.jsx';
+import Navigation from './NavigationComponent.jsx';
 
 const queryClient = new QueryClient();
 
