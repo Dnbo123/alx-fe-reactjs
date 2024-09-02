@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PostsComponent from './PostsComponent';
+import PostsComponent from './PostsComponent.jsx';
 
 function Navigation() {
   const [showPosts, setShowPosts] = useState(true);
