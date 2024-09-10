@@ -9,7 +9,7 @@ const AddRecipeForm = () => {
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = target.value;
     setFormData(prevState => ({
       ...prevState,
       [name]: value
@@ -32,6 +32,7 @@ const AddRecipeForm = () => {
     e.preventDefault();
     if (validateForm()) {
       console.log('Form submitted:', formData);
+      // Here you would typically send the data to your backend
       alert('Recipe submitted successfully!');
       setFormData({ title: '', ingredients: '', steps: '' });
     }
