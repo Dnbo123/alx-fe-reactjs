@@ -26,3 +26,5 @@ dist-ssr
 # .gitignore
 node_modules
 .env
+
+.vercel
