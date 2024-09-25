@@ -5,7 +5,7 @@ const API_BASE_URL = 'https://api.github.com';
 export const fetchUserData = async (username, location, minRepos) => {
  try{
     const response = await axios.get(
-        `${API_BASE_URL}/users/${username},+location;${location},+repos:${minRepos}`, 
+        `https://api.github.com/search/users?q=${username},+location;${location},+repos:${minRepos}`, 
         {headers:{
             Authorization: `token ${import.meta.env.VITE_GITHUB_API_KEY}`,
         },
