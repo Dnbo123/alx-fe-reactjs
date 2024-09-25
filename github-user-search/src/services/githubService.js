@@ -2,14 +2,15 @@ import axios from 'axios'
 
 const API_BASE_URL = 'https://api.github.com';
 
-export const fetchUserData = async (username) => {
+export const fetchUserData = async (username, location, minRepos) => {
  try{
-    const response = await axios.get(`${API_BASE_URL}/users/${username}`, {
-        headers:{
+    const response = await axios.get(
+        `${API_BASE_URL}/users/${username},+location;${location},+repos:${minRepos}`, 
+        {headers:{
             Authorization: `token ${import.meta.env.VITE_GITHUB_API_KEY}`,
         },
     });
-    return response.data;
+    return response.data.items;
  } catch (error) {
     console.error('Error finding user data:', error);
     throw error;
