@@ -7,7 +7,7 @@ function BlogPost() {
   return (
     <div>
       <h2>Blog Post {id}</h2>
-      <p>Paragraph of the Blog Post {id}.</p>
+      <p>Welcome to my blog post {id}.</p>
     </div>
   );
 }
